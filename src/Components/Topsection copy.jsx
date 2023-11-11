@@ -24,18 +24,13 @@ function Topsection() {
   }
 
   console.log(frominputunit);
-
+let value
   function getvalueofselectoptionfrom(e) {
-    const value = +e.target.value;
-    // if (value > result) {
-    //   frominputunit * result
-    // } else if (units[from] > units[to]) {
-    //   ans = value * units[from]
-    // }
+   value = +e.target.value;
     setSelectfrom(value);
    
     setSelectTo(value > result?value * frominputunit:value / frominputunit);
-    console.log({ value });
+    console.log(value);
   }
 
   console.log(selectfrom);
@@ -43,13 +38,10 @@ function Topsection() {
   function getvalueofselectoptionto(e) {
     let result = e.target.value
     setSelectTo(result);
-    // currentval(selectTo)
+    setSelectfrom(result > value? result *toinputunit: result / toinputunit )
   }
 
   console.log(frominputunit);
-
-  // console.log(selectTo);
-
   return (
     <>
       <div className="wrapper">

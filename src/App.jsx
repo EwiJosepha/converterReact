@@ -1,6 +1,6 @@
 
 import './App.css'
-import Topsection from './assets/Components/Topsection'
+import Topsection from './Components/Topsection'
 // import Bottomsection from "./assets/Components/Bottomsection"
 
 function App() {
