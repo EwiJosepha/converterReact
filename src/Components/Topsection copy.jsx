@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 function Topsection() {
-  let [frominputunit, setFrominputunit] = useState("");
-  let [toinputunit, setToinputunit] = useState("");
+  let [frominputunit, setFrominputunit] = useState(0);
+  let [toinputunit, setToinputunit] = useState(0);
   const [selectfrom, setSelectfrom] = useState("");
   const [selectTo, setSelectTo] = useState("");
   const [currentconvertion, setCurrentconvertion] = useState("");
